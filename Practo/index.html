@@ -1,0 +1,756 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Header Example</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="../Fashion store/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="../Fashion store/node_modules/bootstrap/dist/css/bootstrap.css">
+    <style type="text/css">
+
+        
+        
+        /* ===============header body============== */  
+        body {
+            font-family: Arial, sans-serif;
+        }
+        
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 10px 20px;
+            border-bottom: 1px solid #eaeaea;
+            font-size: 20px;
+        }
+        
+        .logo img {
+            height: 40px;
+        }
+        
+        .main-nav ul,
+        .right-nav ul {
+            list-style-type: none;
+            display: flex;
+            gap: 20px;
+        }
+        
+        .main-nav ul li a,
+        .right-nav ul li a {
+            text-decoration: none;
+            color: #333;
+            font-weight: bold;
+        }
+        
+        .main-nav ul li a:hover {
+            color: #0a58ca;
+            border-bottom: 2px solid #0a58ca;
+        }
+        
+        .new-badge {
+            background-color: #4c51ff;
+            color: white;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-size: 12px;
+        }
+        
+        .login-signup button {
+            border: 1px solid #eaeaea;
+            padding: 8px 12px;
+            background-color: transparent;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        
+        .login-signup button:hover {
+            background-color: #f0f0f0;
+        }
+        
+        .right-nav ul li a:hover {
+            color: #0a58ca;
+        }
+
+
+
+        /* ===============section */
+
+            * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        .search-container {
+            display: flex;
+            border: 1px solid #dcdcdc;
+            border-radius: 8px;
+            width: 600px;
+            padding: 15px;
+            margin-left: 20px;
+            margin-top: 10px;
+        }
+
+        .location-search,
+        .doctor-search {
+            display: flex;
+            align-items: center;
+        }
+
+        .location-search {
+            border-right: 1px solid #eaeaea;
+            padding-right: 20px;
+            margin-right: 20px;
+        }
+
+        .location-text {
+            margin-left: 5px;
+            color: #333;
+        }
+
+        .doctor-search input {
+            border: none;
+            outline: none;
+            font-size: 14px;
+            width: 100%;
+        }
+
+        .doctor-search .icon,
+        .location-search .icon {
+            font-size: 18px;
+            color: #666;
+        }
+
+        .doctor-search input::placeholder {
+            color: #aaa;
+        }
+
+
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        }
+
+        .card-container {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .card-content {
+            padding: 20px;
+        }
+
+        .card-content h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+
+
+
+
+
+
+
+
+
+        .banner {
+        background-color: #f0f0f0;
+        padding: 20px;
+        text-align: center;
+        margin-bottom: 20px;
+        }
+
+        .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        }
+
+        .banner h1 {
+        font-size: 36px;
+        text-align: center;
+        margin-bottom: 20px;
+        }
+
+        .view-all {
+        display: inline-block;
+        font-size: 18px;
+        text-align: center;
+        color: #007bff;
+        border: 2px solid blue;
+        padding: 5px 10px;
+        border-radius: 5px;
+        text-decoration: none;
+        }
+
+        .specialties {
+        display: flex;
+
+        justify-content: center;
+        gap: 30px;
+       
+        }
+
+        .specialty {
+        text-align: center;
+        padding: 20px;
+        }
+
+        .specialty img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        }
+
+        .specialty p {
+        font-size: 18px;
+        }
+
+        .consult-now {
+        display: block;
+        padding: 5px 10px;
+        /* background-color: #007bff;  */
+        color: rgb(73, 73, 224);
+        font-size: 20px;
+        text-decoration: none;
+        border-radius: 5px;
+        width: 200px;
+        }
+
+        .articals{
+        
+        display: inline;
+        font-size: 30px;
+       
+        /* background-color: #007bff;  */
+        color: rgb(99, 160, 160);
+        text-decoration: none;
+        border-radius: 5px;
+        width: 100px;
+        }
+        
+
+
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+        } 
+
+        .middle{
+            margin-left: 100px;
+        }
+        .card-container-1 {
+            display: flex;
+            justify-content: center;
+            gap: 30px;
+            padding: 20px;
+            flex-wrap: wrap;
+            margin-top: 40px;
+        }
+
+        .card-container-1 .card-1 {
+            background-color: white;
+            border-radius: 25px;
+            box-shadow: 0 8px 10px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+            width: 300px;
+            text-align: center;
+            transition: transform 0.3s ease;
+        }
+
+        .card img {
+            width: 100%;
+            height: auto;
+            border-bottom: 1px solid #eaeaea;
+        }
+
+        .card-content-1 {
+            padding: 20px;
+            text-decoration: none;
+            size: 30px;
+        }
+
+        .card-content h3 {
+            font-size: 18px;
+            color: #333;
+        }
+
+        .card-content p {
+            font-size: 14px;
+            color: #666;
+            margin-top: 8px;
+        }
+        a{
+            list-style: none;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+
+
+
+        .hero {
+        text-align: center;
+        padding: 20px;
+        }
+
+        .article-categories {
+        margin-top: 40px;
+        }
+
+        article {
+        border: 1px solid #ccc;
+        padding: 20px;
+        }
+
+        h3 {
+        font-size: 20px;
+        }
+
+        p {
+        font-size: 14px;
+        } 
+
+        .container-2{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+
+        .card-2{
+            margin-left: 80px;
+        }
+        .card-left{
+            margin-left: 150px;
+            margin-top: -30px;
+        }
+
+
+
+
+
+
+        .testimonial {
+        text-align: center;
+        padding: 20px;
+        }
+
+        .user-info {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-top: 10px;
+        }
+
+        .user-info img {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        margin-right: 10px;
+        }
+
+        .rating {
+        margin-top: 10px;
+        }
+
+        .star {
+        font-size: 24px;
+        color: gold;
+        } 
+
+       
+
+
+
+
+
+    /* .banner,.banner h1{margin-bottom:20px}.main-header{display:flex;justify-content:space-between;align-items:center;background-color:#fff;padding:10px 20px;border-bottom:1px solid #eaeaea;font-size:20px}.logo img{height:40px}.main-nav ul,.right-nav ul{list-style-type:none;display:flex;gap:20px}.main-nav ul li a,.right-nav ul li a{text-decoration:none;color:#333;font-weight:700}.main-nav ul li a:hover{color:#0a58ca;border-bottom:2px solid #0a58ca}.new-badge{background-color:#4c51ff;color:#fff;padding:3px 6px;border-radius:3px;font-size:12px}.login-signup button{border:1px solid #eaeaea;padding:8px 12px;background-color:transparent;border-radius:5px;cursor:pointer}.login-signup button:hover{background-color:#f0f0f0}.right-nav ul li a:hover{color:#0a58ca}.search-container{display:flex;border:1px solid #dcdcdc;border-radius:8px;width:600px;padding:15px;margin-left:20px;margin-top:10px}.card,.card-container-1 .card-1{overflow:hidden;width:300px;text-align:center}.banner,.card-content,.card-content-1{padding:20px}.doctor-search,.location-search{display:flex;align-items:center}.location-search{border-right:1px solid #eaeaea;padding-right:20px;margin-right:20px}.location-text{margin-left:5px;color:#333}.doctor-search input{border:none;outline:0;font-size:14px;width:100%}.doctor-search .icon,.location-search .icon{font-size:18px;color:#666}.doctor-search input::placeholder{color:#aaa}body{font-family:Arial,sans-serif;background-color:#f8f8f8}.card-container,.card-container-1{display:flex;justify-content:center;gap:30px;padding:20px;flex-wrap:wrap;margin-top:40px}.card{background-color:#fff;border-radius:25px;box-shadow:0 8px 10px rgba(0,0,0,.1);transition:transform .3s}.card:hover{transform:translateY(-5px)}.banner{background-color:#f0f0f0;text-align:center}.container{max-width:1200px;margin:0 auto}.banner h1{font-size:36px;text-align:center}.specialty p,.view-all{font-size:18px}.view-all{display:inline-block;text-align:center;color:#007bff;border:2px solid #00f;padding:5px 10px;border-radius:5px;text-decoration:none}.specialties{display:flex;justify-content:center;gap:30px}.specialty,.testimonial{text-align:center;padding:20px}.specialty img{width:100px;height:100px;border-radius:50%;margin-bottom:10px}.consult-now{display:block;padding:5px 10px;color:#00f;text-decoration:none;border-radius:5px;width:200px}.middle{margin-left:100px}.card-container-1 .card-1{border-radius:25px}.card img{border-bottom:1px solid #eaeaea;width:100%;height:auto}.card-content h3{font-size:18px;color:#333}.card-content p{font-size:14px;color:#666;margin-top:8px}a{list-style:none}.container-2{display:flex;justify-content:center;align-items:center}.card-2{margin-left:80px}.card-left{margin-left:150px;margin-top:-30px}.rating,.user-info{margin-top:10px}.user-info{display:flex;align-items:center;justify-content:center}.user-info img{width:50px;height:50px;border-radius:50%;margin-right:10px}.star{font-size:24px;color:gold} */
+
+
+
+
+    footer{
+            background-color: rgb(59, 115, 227);
+            color:white;
+            display:grid;
+            grid-template-columns: 2.4fr 2.4fr 2.4fr 2.4fr 2.4fr;
+            font-family: arial;
+            padding: 40px;
+            width: 100vw;
+            height: 400px;
+           
+            /* left: 0;
+            right: 0;
+            bottom:0; */
+            /* ====OR=====  alternative*/
+            inset:600px 0 0 0 ;
+        }
+
+        footer aside{
+            color:#fff;
+        }
+        .brand-footer-title{
+            display: block;
+            font-size:20px;
+            font-weight: bold;
+            margin-bottom:10px;
+        
+        }
+         
+        .brand-footer-title~span{
+            
+            font-size:20px;
+            margin-bottom:10px;
+            font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+        }
+
+        div~span{           /*for adjecent span*/
+             display:block;
+        } 
+
+        div span{
+            color:rgb(225, 220, 220);
+        }
+
+        /* ===============OR========== */
+        /* div~span{
+            display:block;
+        } */
+         /* ================OR=========BY CLASS NAME */
+        /* .brand-footer-title~span{
+            display:block;
+        } */ 
+
+        .brand-title{
+            font-size:30px;
+            margin-bottom: 15px;
+            font-weight:bold;
+        }
+        
+        aside span{
+            padding: 10px 10px 0 10px;
+        }
+        div span:hover{
+        transform: translateY(-3px) translateX(-5px);
+        
+        color:#fff;
+        }
+
+
+        .fotter-image{
+            display: flex;
+            justify-content: center;
+            align-items: center; 
+        }
+    
+</style>
+
+
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">
+            <img src="../Practo/public/images/image.png" alt="Practo Logo">
+        </div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="#">Find Doctors</a></li>
+                <li><a href="#">Video Consult</a></li>
+                <li><a href="#">Surgeries</a></li>
+            </ul>
+        </nav>
+        <div class="right-nav">
+            <ul>
+                <li><a href="#" class="new-badge">NEW</a></li>
+                <li><a href="#">For Corporates</a></li>
+                <li><a href="#">For Providers</a></li>
+                <li><a href="#">Security & Help</a></li>
+            </ul>
+        </div>
+        <div class="login-signup">
+            <button>Login / Signup</button>
+        </div>
+    </header>
+
+
+
+    <section>
+        <div class="search-container">
+            <div class="location-search">
+                <span class="icon">📍</span>
+                <span class="location-text">Bangalore</span>
+            </div>
+            <div class="doctor-search">
+                <span class="icon">🔍</span>
+                <input type="text" placeholder="Search doctors, clinics, hospitals, etc." />
+            </div>
+        </div>
+
+
+
+        <div class="card-container">
+            <div class="card">
+                <img src="../Practo/public/images/doc-1.jpg" alt="Doctor 1" height="200">
+                <div class="card-content">
+                    <h1>Instant Video Consultation</h1>
+                    <p>Connect within 60 secs</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../Practo/public/images/doc-2.png" alt="Doctor 2" height="100" width="100">
+                <div class="card-content">
+                    <h1>Find Doctors Near You</h1>
+                    <p>Confirmed appointments</p>
+                </div>
+            </div>
+            <div class="card">
+                <img src="../Practo/public/images/doc-1.jpg" alt="Doctor 3">
+                <div class="card-content">
+                    <h1>Surgeries</h1>
+                    <p>Safe and trusted surgery centers</p>
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="banner">
+            <div class="container">
+              <h1>Consult top doctors online for any health concern</h1>
+              <div><a href="#" class="view-all">View All Specialities</a></div>
+              <p>Private online consultations with verified doctors in all specialists</p>
+              <div class="specialties">
+                <div class="specialty">
+                  <img src="../Practo/public/images/overy.png" alt="Period doubts or Pregnancy">
+                  <p>Period doubts or Pregnancy</p>
+                  <a href="#" class="consult-now">CONSULT NOW</a>
+                </div>
+                <div class="specialty">
+                  <img src="../Practo/public/images/cold.png" alt="Acne, pimple or skin issues">
+                  <p>Acne, pimple or skin issues</p>
+                  <a href="#" class="consult-now">CONSULT NOW</a>
+                </div>
+                <div class="specialty">
+                  <img src="../Practo/public/images/performance.png" alt="Performance issues in bed">
+                  <p>Performance issues in bed</p>
+                  <a href="#" class="consult-now">CONSULT NOW</a>
+                </div>
+                <div class="specialty">
+                  <img src="../Practo/public/images/cold.jpeg" alt="Cold, cough or fever">
+                  <p>Cold, cough or fever</p>
+                  <a href="#" class="consult-now">CONSULT NOW</a>
+                </div>
+
+                <span class="specialty">
+                  <img src="../Practo/public/images/overy.png" alt="Child not feeling well">
+                  <p>Child not feeling well</p>
+                  <a href="#" class="consult-now">CONSULT NOW</a>
+                </span>
+                <div class="specialty">
+                  <img src="../Practo/public/images/depression.jpeg" alt="Depression or anxiety">
+                  <p>Depression or anxiety</p>
+                  <a href="#" class="consult-now">CONSULT NOW</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+
+        <div class="middle"><h1>Book an appointment for an in-clinic consultation</h1>
+        <span>Private online consultations with verified doctors</span>
+        </div>
+        <div class="card-container-1">
+
+            <div class="card-1">
+                <img src="../Practo/public/images/dentist.jpg" alt="Doctor 1" height="300" width="300">
+                <div class="card-content-1">
+                    <h1><a href="#" class="consult-now">Dentist</a>
+                    <p>Teething trouble? Schedule a dental check-up</p>
+                </div>
+            </div>
+            <div class="card-1">
+                <img src="../Practo/public/images/gestro.avif" alt="Doctor 2" height="300" width="300">
+                <div class="card-content-1">
+                    <h1><a href="#" class="consult-now">Gynecologist</a></h1>
+                    
+                    <p>Explore for women health, pregnancy and infertility treatments</p>
+                </div>
+            </div>
+            <div class="card-1">
+                <img src="../Practo/public/images/diet.webp" alt="Doctor 3" height="300" width="300">
+                <div class="card-content-1">
+                    <h1><a href="#" class="consult-now">Nutrition</a></h1>
+                    <p>Get guidance on eating right, exercise and lifestyle</p>
+                </div>
+            </div>
+            <div class="card-1">
+                <img src="../Practo/public/images/therepist.webp" alt="Doctor 3" height="300" width="250">
+                <div class="card-content-1">
+                    <h1><a href="#" class="consult-now">Therapist</a></h1>
+                    <p>Pulled a muscle? Schedule a physiotherapy session</p>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+
+
+        <div class="container-2">
+
+            <div class="card-left">
+                <h1>Read top articles from health experts</h1>
+                <p>
+                    Health articles that keep you informed about good health practices and achieve your goals.
+                </p>
+                <button class="btn btn-primary">See all articles</button>
+
+            </div>
+            
+                
+            <div class="card-2">
+                    <img src="../Practo/public/images/corona.jpeg" alt="Doctor 3" height="300" width="400">
+                    <div class="card-content-2">
+                        <h1><a href="#" class="articals">Coronavirus</a></h1>
+                        
+                        <h3>12 Coronavirus Myths and Facts that <br> you should beaware of  </h3>
+                    </div>
+            </div>
+
+            
+            <div class="card-2">
+                <img src="../Practo/public/images/vitamins.jpeg" alt="Doctor 3" height="300" width="400">
+                <div class="card-content-2">
+                    <h1><a href="#" class="articals">vitamins and supplements</a></h1>
+                    <h3>Eating Right to Build Good Health and Immunity</h3>
+                </div>
+            </div>
+        </div>
+
+        <hr>
+
+
+        <!-- <div class="container-3">
+            <h1>What our users have to say</h1>
+
+            <h3>What our users have to sayWhat our users have to sayWhat our users have to say</h3>
+
+            <h3 class="bi bi-person">ankur</h3>
+        </div> -->
+
+        <div class="testimonial">
+            <h2>What our users have to say</h2>
+            
+            <h3>Very good app. Well thought out about booking/rescheduling/canceling an appointment. Also, Doctor's feedback mechanism is good and describes all the basics in a good way<h3>
+            <div class="user-info">
+              <img src="../Practo/public/images/doc-2.png" alt="Avinash Kumar">
+              <p>Avinash Kumar</p>
+            </div>
+            <div class="rating">
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+              <span class="star">★</span>
+            </div>
+        </div>
+
+    </section>
+
+
+
+    <footer>
+        <div>
+            <div class="brand-title">Practo.</div>
+            <aside>
+                <span class="bi bi-facebook"></span>
+                <span class="bi bi-instagram"></span>
+                <span class="bi bi-twitter-x"></span>
+            </aside>
+        </div>
+
+        <div>
+            <div class="brand-footer-title">SUPPORT</div>
+            <span>Contact Us</span>
+            <span>FAQs</span>
+            <span>Size Guide</span>
+            <span> Shipping &</span>
+           
+        </div>
+
+        <div>
+            <div class="brand-footer-title">SHOP</div>
+            <span>Mens</span>
+            <span>Shopping</span>
+            <span>Womens</span>
+            <span></span>
+        </div>
+
+        <div>
+            <div class="brand-footer-title">COMPANY</div>
+            <span>Our Story</span>
+            <span> Careers</span>
+            <span>Term &</span>
+            <span>Conditions</span>
+        </div>
+
+        <div>
+            <div class="brand-footer-title">CONTACT</div>
+            <span>1-202-555-0105</span>
+            <span>1-202-555-0106</span>
+            <span>help@shopper.com</span>
+            <a href="#"> Contact Us</a>   
+        </div>
+
+
+        <div class="footer-image">
+            <img src="../Practo/public/images/image.png" alt="Practo">
+        </div>
+    </footer>
+</body>
+</html>
+
+
