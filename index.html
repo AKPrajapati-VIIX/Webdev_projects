@@ -1,0 +1,443 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SSurfers</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="/PROJECT/Fashion store/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/PROJECT/Fashion store/node_modules/bootstrap/dist/css/bootstrap.css">
+    <style type="text/css">
+      
+
+        body {
+            font-family: Arial, sans-serif;
+        }
+
+        /* ===================Top Header ======================*/
+        .top-header {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: space-between;
+            padding: 30px;
+            font-size: 20px;
+        }
+
+        .social-icons a {
+            color: white;
+            margin-left: 10px;
+            text-decoration: none;
+        }
+
+        .social-icons a:hover {
+            opacity: 0.7;
+        }
+
+        /* ===============================Main Header====================== */
+        .main-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .main-header h1 {
+            font-size: 36px;
+        }
+
+        .main-header nav ul {
+            list-style: none;
+            display: flex;
+        }
+
+        .main-header nav ul li {
+            margin-left: 20px;
+        }
+
+        .main-header nav ul li a {
+            text-decoration: none;
+            color: black;
+            font-size: 16px;
+        }
+
+        .main-header nav ul li a:hover {
+            color: #FF6F61;
+        }
+
+
+
+
+
+
+
+
+        /*=============================== Banner Section1================================= */
+        .banner {
+            background-image: url('../../../PROJECT/public/images/wedev1.jpeg'); /* Add your banner image */
+            background-size: cover;
+            background-position: center;
+            height: 500px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: white;
+            position: relative;
+        }
+
+        .banner-text {
+            text-align: center;
+        }
+
+        .banner h2 {
+            font-size: 48px;
+            margin-bottom: 10px;
+        }
+
+        .banner p {
+            font-size: 18px;
+            margin-bottom: 20px;
+            color:white;
+        }
+       
+
+        .button {
+            background-color: #FF6F61;
+            padding: 10px 20px;
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+            border-radius: 5px;
+        }
+
+        .button:hover {
+            background-color: #ff4a3c;
+        }
+
+        /* Surfboards Section */
+        .surfboards {
+            text-align: center;
+            padding: 50px;
+        }
+
+        .surfboards h2 {
+            font-size: 36px;
+        }
+
+
+
+
+
+        /* =============section-2======================= */
+
+
+        .product-grid {
+            display: flex;
+            /* padding: -30px; */
+            justify-content: space-around;
+
+            flex-wrap: wrap;
+            padding: 2px;
+        }
+
+        .product-item {
+            text-align: center;
+            margin: 10px;
+        }
+
+        .product-item img {
+            width: 150px;
+            height: auto;
+        }
+
+        .product-item h3 {
+            font-size: 18px;
+            margin: 10px 0;
+        }
+
+        .product-item p {
+            font-size: 16px;
+            color: #333;
+        }
+
+        .read-more {
+            font-size: 14px;
+            color: orange;
+            text-decoration: none;
+        }
+
+
+
+        /* =====================section-3============================ */
+
+
+        .container {
+            margin-top: 40px;
+            margin-bottom: 40px;
+            display: flex;
+            
+            background-color: #fff;
+            /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); */
+            margin-left: 200px;
+        }
+
+        .image-section img {
+            width: 600px;
+            height: 350px;
+            object-fit: cover;
+        
+            /* height: auto; */
+            object-fit: cover;
+        }
+
+        .text-section {
+            padding: 50px;
+            display: flex;
+            margin-left: 50px;
+            margin-bottom: 50px;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+        }
+
+        h2 {
+            font-size: 24px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.5;
+            margin-bottom: 20px;
+            color: #555;
+        }
+
+        .read-more-button {
+            padding: 10px 20px;
+            border: 2px solid #000;
+            text-decoration: none;
+            color: #000;
+            font-weight: bold;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        .read-more-button:hover {
+            background-color: #000;
+            color: #fff;
+        }
+
+
+
+
+
+        /* //////////////////reviews  section-4===================== */
+
+
+        .customer-reviews {
+        text-align: center;
+        justify-content: center;
+        padding: 40px;
+        background-color: rgb(247, 200, 208);
+        /* height: 300px; */
+        width: 1000px;
+        margin-left: 500px;
+        border-radius: 40px;
+        }
+
+        .review-container {
+        display: flex;
+        justify-content: space-between;
+        }
+
+        .review {
+        text-align: left;
+        padding: 20px;
+        border: 1px solid #fdaa2f;
+        border-radius: 5px;
+        }
+
+        .review img {
+        width: 100px;
+        height: 100px;
+        border-radius: 50%;
+        margin-bottom: 10px;
+        }
+
+        .review-author {
+        font-style: italic;
+        }
+
+
+
+        /* ==============footer section=========== */
+
+       
+        footer {
+            /* font-family: Arial, sans-serif; */
+            background-color: #f87457;
+            color: #fff; 
+            text-align: center;
+            height: 350px;
+            width: 100%;
+            padding: 70px;
+            margin-top: 30px;
+
+        }  
+
+        h1 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 18px;
+            margin-bottom: 40px;
+        }
+
+        input {
+            padding: 10px;
+            border: none;
+            border-radius: 5px;
+            width: 300px;
+            margin-bottom: 20px;
+        }
+
+        button {
+            background-color: #007bff; /* Blue button color */
+            color: #fff;
+            border: none;
+            padding: 10px 20px;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+
+
+    </style>
+</head>
+<body>
+    <!-- Top Header for contact and social media -->
+    <div class="top-header">
+        <span>+48 789 456 123</span>
+        <span>contact@ssurfers.com</span>
+        <div class="social-icons">
+            <a href="#"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+            <a href="#"><i class="bi bi-twitter"></i></a>
+            <a href="#"><i class="bi bi-linkedin"></i></a>
+        </div>
+    </div>
+
+    <!-- Main header with logo and nav menu -->
+    <header class="main-header">
+        <h1>SSURFERS</h1>
+        <nav>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Products</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About us</a></li>
+                <li><a href="#">Contact</a></li>
+                <li><a href="#"><i class="bi bi-cart-check-fill"></i></a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Full-width Banner Section -->
+    <section class="banner">
+        
+        <div class="banner-text">
+
+            <h2>Choose a board for yourself</h2>
+            <p>Duis condimentum felis sit amet turpis pellentesque ultrices. Lorem ipsum dolor sit amet.</p>
+            <button class="btn btn-danger">CHECK OUR BOARDS</button>
+        </div>
+    </section>
+
+   
+
+    <!-- Surfboards Section -->
+    <section class="surfboards">
+        <h2>Surfboards</h2>
+        <!-- More content for surfboards goes here -->
+    </section>
+
+    <section class="product-grid">
+        <div class="product-item">
+            <img src="/PROJECT/public/images/end1.jpeg" alt="Product 8">
+            <h3>Product 8</h3>
+            <p>450,00 USD</p>
+            <a href="#" class="read-more">Zobacz więcej →</a>
+        </div>
+        <div class="product-item">
+            <img src="/PROJECT/public/images/end3.jpeg" alt="Product 7">
+            <h3>Product 7</h3>
+            <p>340,00 USD</p>
+            <a href="#" class="read-more">Zobacz więcej →</a>
+        </div>
+        <div class="product-item">
+            <img src="/PROJECT/public/images/end3.jpeg" alt="Product 6">
+            <h3>Product 6</h3>
+            <p>425,00 USD</p>
+            <a href="#" class="read-more">Zobacz więcej →</a>
+        </div>
+        <div class="product-item">
+            <img src="/PROJECT/public/images/end1.jpeg" alt="Product 5">
+            <h3>Product 5</h3>
+            <p>370,00 USD</p>
+            <a href="#" class="read-more">Zobacz więcej →</a>
+        </div>
+    </section>
+
+
+    <section>
+        <div class="container">
+            <div class="image-section">
+                <img src="../../../PROJECT/public/images/webdev.jpeg" alt="Surfboards by the beach" width="100%" height="200px">
+            </div>
+            <div class="text-section">
+                <h2>Learn more about surfing</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque et mauris lacinia, egestas velit eu, ultricies risus. Cras venenatis nec est volutpat ultrices. Phasellus velit odio, laoreet at placerat et, blandit a dolor. Mauris eu leo at ante hendrerit viverra. Vestibulum vel lectus non velit hendrerit luctus.</p>
+                <a href="#" class="read-more-button">Read More</a>
+            </div>
+        </div>
+    </section>
+
+    <section class="customer-reviews">
+        <h2>Customer Reviews</h2>
+        <p>hhjfjkhjkdhfkhkudhkbkbk   hdhshjgfdhbfmdkufhbdhfkghjdbhbkdgjdgfjgydftuiwefgu</p>
+        <div class="review-container">
+          <div class="review">
+            <img src="/PROJECT/public/images/mns1.jpeg" alt="Customer 1">
+            <p>Maecenas malesuada urna in libero vestibulum, eu dapibus arcu lacinia. Class aptent taciti sociosqu ad litora torquent per conubia nostra interdum sollicitudin.</p>
+            <div class="review-author">
+              @Julio_Diaz
+            </div>
+          </div>
+          <div class="review">
+            <img src="/PROJECT/public/images/women2.jpg" alt="Customer 2">
+            <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vivamus id congue tortor. Pellentesque dictum et dolor vitae egestas.</p>
+            <div class="review-author">
+              @Lisa_Wright
+            </div>
+           </div>
+        </div>
+    </section>
+
+
+
+    <footer>
+        <h1>Sign up for the newsletter!</h1>
+        <p>Sign up for the newsletter and receive free web design knowledge.</p>
+        <form>
+            <input type="email" placeholder="Your email" required>
+            <div>
+                <button type="submit">SIGN UP</button>
+            </div>
+        </form>
+    </footer>
+
+
+</body>
+</html>
+
+    
